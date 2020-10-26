@@ -2,16 +2,13 @@
   "name": "my-library",
   "version": "0.1.0",
   "private": true,
-  "main": "dist/my-library.common.js",
-  "typings": "dist/types/index.d.ts",
+  "main": "lib-main.js",
   "author": "K.K",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name my-library ./lib-main.js",
+    "build-type": "tsc --emitDeclarationOnly --declaration -P tsconfig.types.json",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
