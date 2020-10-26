@@ -1,4 +1,4 @@
-import Card from '/src/components/Card.vue'
+import Card from './src/components/Card.vue'
 
 export const MyLibrary = {
   install(Vue, options) {
